@@ -1,17 +1,16 @@
 Gary W. Hunter Looney
 Add Character
-Project 2
+Project 4
 Term 1305
 
 Git:
 
-https://github.com/hunterlooney/Looney_Gary_MIU_Project_3.git
+https://github.com/hunterlooney/Looney_Gary_MIU_Project_4.git
 
 Gold:
 
-https://github.com/hunterlooney/Looney_Gary_MIU_Project_3/tree/master/Gold
-
+https://github.com/hunterlooney/Looney_Gary_MIU_Project_4.git
 
 Bronze:
 
-https://github.com/hunterlooney/Looney_Gary_MIU_Project_3/tree/master/Bronze
+https://github.com/hunterlooney/Looney_Gary_MIU_Project_4.git

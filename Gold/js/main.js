@@ -1,5 +1,5 @@
 //Gary W. Hunter Looney
-//Project 3
+//Project 4
 //Add Character Java
 //Term 1305
 		
