@@ -1,0 +1,329 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+    <title>Add a Character :: Gary W. Hunter Looney :: index :: Project 3 :: Term 1305</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css"/> 
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+<!-- Index -->
+<div data-role="page" id="index">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Add a Character</h1>
+	</div>
+	
+	<div data-role="content">	
+	
+		<center><a href="#additem" > <img src="images/Elf2.png"> </a> </center>
+		<!-- Photo credit: Suus Wansink / Foter.com / CC BY   -->
+
+		<p><a href="#additem" data-role="button" data-icon="arrow-r" data-iconpos="right">Add Character</a></p>
+		<p>Browse by Attribute</p>
+		<ul data-role="listview" data-theme="a" data-inset="true" data-filter="true">
+				<li><a href="#gender">
+					<img src="images/Gender3.png" height="110%">
+					<h1>Gender</h1>
+					<p>Will sort by gender</p></a></li>
+				<li><a href="#race">
+					<img src="images/Race3.png" height="110%">
+					<h1>Race</h1>
+					<p>Will sort by race</p></a></li>
+				<li><a href="#height">
+					<img src="images/Height3.png" height="110%">
+					<h1>Height</h1>
+					<p>Will sort by height</p></a></li>
+				<li><a href="#birthdate">
+					<img src="images/Birthdate3.png" height="110%">
+					<h1>Birthdate</h1>
+					<p>Will sort by birthdate</p></a></li>
+				<li><a href="#glasses">
+					<img src="images/Glasses3.png" height="110%">
+					<h1>Glasses</h1>
+					<p>Will sort by glasses</p></a></li>
+		</ul>
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#additem" data-icon="plus">Add</a></li>
+				<li><a href="#browse" data-icon="grid">Browse</a></li>				
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+</div>
+
+<!-- Add Item (Character) -->
+<div data-role="page" id="additem" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Add a Character</h1>
+	</div>
+
+	<header>
+    	<h2>Character Information</h2>
+	</header>
+
+	<form action="" method="post" id="addcharacter">
+		<div data-role="fieldcontain">  
+			<label for="required">* Means it is a Required Field!
+			<label id="error">
+		</div>
+
+		<div data-role="fieldcontain">
+		<!-- Text Input -->
+		<label for="cname">*Name: </label> 
+		<input type="text" name="cname" id="cname" value="" class="required" /> 
+		</div> 	
+
+		<br>
+		<!-- Checkbox Input -->
+		<div data-role="fieldcontain">
+		<label for="glasses">Does your character wear glasses? </li>
+		<label><input type="checkbox" name="glasses" /> The character wears glasses. </label>
+		</div>
+
+		<br>
+		<!--Flip Toggle Switch -->
+		<div data-role="fieldcontain">
+		<label> Is your character male or female? </label>
+		<select name="sex" id="sex" data-role="slider">
+		<option value="Female">Female</option>
+		<option value="Male">Male</option>
+		</select> 
+		</div>
+	
+		<br>
+		<!-- Date Input -->
+		<div data-role="fieldcontain">
+		Birthdate: <input type="date" id="birthdate" class="required date">
+		</div>
+
+
+		<br>
+		<div data-role="fieldcontain">What is the race of your character? 
+		<form action=""> <select id="race">
+		<option value="Reptilian">Reptilian</option>
+		<option value="Feline">Feline</option>
+		<option value="Elf">Elf</option>
+		</select>
+		</div>
+		</form>
+
+		<br>
+		<div data-role="fieldcontain">Height: <input type="range" id="height" value="6.0" min="5.0" max="7.0">
+		</div>
+		
+		<div data-role="fieldcontain">
+		</div>
+		
+		<br>
+		<br>
+		<input type="button" id="submitButton" value="Submit" data-theme="a"/>
+		<input type="button" id="displayButton" value="Display Data" />
+		<input type="button" id="clearButton" value="Clear Stored Data" />
+	</form>
+
+
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#additem" data-icon="plus">Add</a></li>
+				<li><a href="#browse" data-icon="grid">Browse</a></li>				
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+</div>
+	
+
+<!-- Browse -->
+<div data-role="page" id="browse" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Browse</h1>
+	</div>
+		<ul data-role="listview" data-theme="g" data-inset="true">
+			<li>Browse by Attribute</li>
+			<li><a href="#gender"> <img src="images/Gender3.png"> Gender</a></li>
+			<li><a href="#race"> <img src="images/Race3.png"> Race</a></li>
+			<li><a href="#height"> <img src="images/Height3.png"> Height</a></li>
+			<li><a href="#birthdate"> <img src="images/Birthdate3.png"> Birthdate</a></li>
+			<li><a href="#glasses"> <img src="images/Glasses3.png"> Glasses</a></li>
+		</ul>
+
+	<div data-role="content">
+		<uldata-role="listview" data-inset="true">
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#additem" data-icon="plus">Add</a></li>
+				<li><a href="#browse" data-icon="grid">Browse</a></li>				
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Gender -->
+<div data-role="page" id="gender" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Data Sorted by Gender</h1>
+	</div>
+	
+	<p>This is where the data would be sorted by Gender.</p>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#additem" data-icon="plus">Add</a></li>
+				<li><a href="#browse" data-icon="grid">Browse</a></li>				
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Race -->
+<div data-role="page" id="race" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Data Sorted by Race</h1>
+	</div>
+	
+	<p>This is where the data would be sorted by Race.</p>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#additem" data-icon="plus">Add</a></li>
+				<li><a href="#browse" data-icon="grid">Browse</a></li>				
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Height -->
+<div data-role="page" id="height" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Data Sorted by Height</h1>
+	</div>
+	
+	<p>This is where the data would be sorted by Height.</p>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#additem" data-icon="plus">Add</a></li>
+				<li><a href="#browse" data-icon="grid">Browse</a></li>				
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Birthdate -->
+<div data-role="page" id="birthdate" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Data Sorted by Birthdate</h1>
+	</div>
+	
+	<p>This is where the data would be sorted by Birthdate.</p>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#additem" data-icon="plus">Add</a></li>
+				<li><a href="#browse" data-icon="grid">Browse</a></li>				
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Glasses -->
+<div data-role="page" id="glasses" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Data Sorted by Glasses</h1>
+	</div>
+	
+	<p>This is where the data would be sorted by Glasses.</p>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#additem" data-icon="plus">Add</a></li>
+				<li><a href="#browse" data-icon="grid">Browse</a></li>				
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<div data-role="dialog" id="error">
+	<div data-role="header" data-position="fixed">
+		<h1>Missing Fields</h1>
+	</div>
+	
+	<div data-role="content">
+		<ul>
+			<li> It Works? </li>
+		</ul>
+	</div>
+
+</div>
+
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<script src="js/libs/jquery.validate.min.js" type="js/javascript"></script>
+	<script src="js/libs/jquery.validate.js" type="js/javascript"></script>
+	<script src="js/libs/additional-methods.min.js" type="js/javascript"></script>
+	<script src="js/libs/additional-methods.js" type="js/javascript"></script>	
+	<script src="js/main.js" type="text/javascript"></script>
+	
+</body>
+</html>

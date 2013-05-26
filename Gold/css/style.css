@@ -1,0 +1,20 @@
+/*
+title: MIU Project 2 
+name: Gary W. Hunter Looney
+date: 05/17/13
+*/
+
+img, object {
+	max-width:90%;
+	max-height:90%;
+}
+
+body {
+    font-family: "Courier New";
+    background-color: #006637;
+    color: #ffea00;
+    text-align:left
+	width: 300px;
+    font-weight: bold;
+
+}

@@ -1,0 +1,365 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+    <title>Add a Character :: Gary W. Hunter Looney :: index :: Project 3 :: Term 1305</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css"/> 
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+<!-- Index -->
+<div data-role="page" id="index">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Add a Character</h1>
+	</div>
+	
+	<div data-role="content">	
+		<br>
+		<br>
+		<center><a href="additem.html" > <img src="images/Elf2.png"> </a> 
+		<!-- Photo credit: Suus Wansink / Foter.com / CC BY   -->
+	
+		<p><a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Add Character</a></p>
+		
+		<div data-role="content">
+			<p>Browse by Attribute</p>		
+			<ul data-role="listview" data-theme="a" data-inset="true" data-filter="true">
+				<li>
+					<a href="#gender">
+					<img src="images/Gender3.png" height="110%">
+					<h1>Gender</h1>
+					<p>Will sort by gender</p></a>
+				</li>
+				<li>
+					<a href="#race">
+					<img src="images/Race3.png" height="110%">
+					<h1>Race</h1>
+					<p>Will sort by race</p></a>
+				</li>
+				<li>
+					<a href="#height">
+					<img src="images/Height3.png" height="110%">
+					<h1>Height</h1>
+					<p>Will sort by height</p></a>					
+				</li>
+				<li>
+					<a href="#birthdate">
+					<img src="images/Birthdate3.png" height="110%">
+					<h1>Birthdate</h1>
+					<p>Will sort by birthdate</p></a>
+				</li>
+				<li>
+					<a href="#glasses">
+					<img src="images/Glasses3.png" height="110%">
+					<h1>Glasses</h1>
+					<p>Will sort by glasses</p></a>
+				</li>
+			</ul>
+		</div>
+		</center>
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>			
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+</div>
+	
+<!-- Search -->
+<div data-role="page" id="search" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Search</h1>
+	</div>
+
+	<div data-role="content">
+		<br>
+		<input type="search" name="search" id="search-basic" value="" /></p>
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>	
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Browse -->
+<div data-role="page" id="browse" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Browse</h1>
+	</div>
+		<ul data-role="listview" data-theme="g" data-inset="false">
+			<li>Browse by Attribute</li>
+			<li><a href="#gender"> <center><img src="images/Gender3.png"></center></a></li>
+			<li><a href="#race"> <center><img src="images/Race3.png"></center></a></li>
+			<li><a href="#height"> <center><img src="images/Height3.png"></center></a></li>
+			<li><a href="#birthdate"> <center><img src="images/Birthdate3.png"></center></a></li>
+			<li><a href="#glasses"> <center><img src="images/Glasses3.png"></center></a></li>
+		</ul>
+
+	<div data-role="content">
+		<uldata-role="listview" data-inset="true">
+	</div>
+	
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Gender -->
+<div data-role="page" id="gender" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Sort by Gender</h1>
+	</div>
+	
+	<div data-role="button" data-icon="arrow-d" data-iconpos="right" id="produceData">Produce Data</div>
+
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>		
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Race -->
+<div data-role="page" id="race" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Sort by Race</h1>
+	</div>
+	
+	<div data-role="button" data-icon="arrow-d" data-iconpos="right" id="produceData">Produce Data</div>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>			
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Height -->
+<div data-role="page" id="height" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Sort by Height</h1>
+	</div>
+	
+	<div data-role="button" data-icon="arrow-d" data-iconpos="right" id="produceData">Produce Data</div>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>		
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Birthdate -->
+<div data-role="page" id="birthdate" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Sort by Birthdate</h1>
+	</div>
+	
+	<div data-role="button" data-icon="arrow-d" data-iconpos="right" id="produceData">Produce Data</div>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>			
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<!-- Glasses -->
+<div data-role="page" id="glasses" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Sort by Glasses</h1>
+	</div>
+	
+	<div data-role="button" data-icon="arrow-d" data-iconpos="right" id="produceData">Produce Data</div>
+
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>			
+			</ul>
+		</div>
+		<h4>05-23-13, Gary W. Hunter Looney</h4>
+	</div>
+
+</div>
+
+<div data-role="page" id="news" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>NewsStream</h1>
+	</div>
+	
+	<div data-role="content">
+		<ul data-role="listview" data-theme="a" data-inset="true" data-filter="true">	
+			<li>
+				<h3>Bob McTest</h3>
+				<p>Glasses, Male, 2010-02-05,</p>
+				<p>Reptilian, 7 ft tall</p>
+			</li>
+			<li>
+				<h3>Shelly McTest</h3>
+				<p>Glasses, Female, 2010-02-05,</p>
+				<p>Reptilian, 7 ft tall</p>
+			</li>
+			<li>
+				<h3>George McTest</h3>
+				<p>Glasses, Male, 2010-02-05,</p>
+				<p>Reptilian, 7 ft tall</p>
+			</li>
+			<li>
+				<h3>Ann McTest</h3>
+				<p>Glasses, Female, 2010-02-05,</p>
+				<p>Reptilian, 7 ft tall</p>
+			</li>
+			<li>
+				<h3>Jorge McTest</h3>
+				<p>Glasses, Male, 2010-02-05,</p>
+				<p>Reptilian, 7 ft tall</p>
+			</li>			
+		</ul>
+		<div data-role="footer" data-position="fixed" data-id="index">
+			<div data-role="navbar">
+				<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>			
+				</ul>
+			</div>
+			<h4>05-23-13, Gary W. Hunter Looney</h4>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="grid" data-add-back-btn="true">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Grid</h1>
+	</div>
+	
+	<div data-role="content">
+		<div class="ui-grid-a">
+		<div class="ui-block-a"> 05/20/13</div>
+		<div class="ui-block-b"> Bob McTest</div>
+		<div class="ui-block-a"> Glasses</div>
+		<div class="ui-block-b"> 7 ft Tall</div>
+	</div>
+	<br>
+	<div class="ui-grid-a">
+		<div class="ui-block-a"> 05/20/13</div>
+		<div class="ui-block-b"> Bob McTest</div>
+		<div class="ui-block-a"> Glasses</div>
+		<div class="ui-block-b"> 7 ft Tall</div>
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="index">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#index" data-icon="home">Home</a></li>
+			<li><a href="additem.html" data-icon="plus">Add</a></li>
+			<li><a href="#browse" data-icon="grid">Browse</a></li>
+			<li><a href="#news" data-icon="search">News</a></li>
+			<li><a href="#grid" data-icon="grid">Grid</a></li>						
+			</ul>
+		</div>
+			<h4>05-23-13, Gary W. Hunter Looney</h4>
+		</div>
+</div>
+
+<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<script src="js/json.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	
+</body>
+</html>
