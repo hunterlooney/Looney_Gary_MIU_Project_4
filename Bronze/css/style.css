@@ -1,7 +1,7 @@
 /*
-title: MIU Project 2 
+title: MIU Project 3 
 name: Gary W. Hunter Looney
-date: 05/17/13
+date: 05/30/13
 */
 
 img, object {
@@ -17,4 +17,32 @@ body {
 	width: 300px;
     font-weight: bold;
 
+}
+
+#warningSystem {
+	display: none;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: rgba(245,16,16,0.2);
+    border: 2px solid red;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    padding: 10px 10px;
+}
+
+#errorMessages {
+	color: #272727;
+	display: block;
+	background-color: rgba(245,16,16,0);
+	margin-right: 0px;
+    margin-bottom: 3px;
+    padding-left: 0px;
+}
+
+.warning {
+	background-color: rgba(245,16,16,0.2);
+    border: 2px solid red;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
