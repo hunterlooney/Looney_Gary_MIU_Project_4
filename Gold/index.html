@@ -15,9 +15,14 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>       
-        
+  	<link rel="stylesheet" href="css/themes/theme2.css" />
+  	<link rel="stylesheet" href="css/themes/theme2.min.css" />
+  	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" /> 
+ 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+
+
+
+      
 </head>
 <body>
 
@@ -25,7 +30,7 @@
 <div data-role="page" id="index">
 
 	<div data-role="header" data-position="fixed">
-		<h1>Add a Character</h1>
+		<h1>LooneyApps</h1>
 	</div>
 	
 	<div data-role="content">	
@@ -34,27 +39,29 @@
 		<!-- Photo credit: Suus Wansink / Foter.com / CC BY   -->
 
 		<p><a href="#additem" data-role="button" data-icon="arrow-r" data-iconpos="right">Add Character</a></p>
+		
+		
 		<p>Browse by Attribute</p>
-		<ul data-role="listview" data-theme="a" data-inset="true" data-filter="true">
+		<ul id="browseOne" data-role="listview" data-inset="true" data-filter="true">
 				<li><a href="#gender">
-					<img src="images/Gender3.png" height="110%">
-					<h1>Gender</h1>
+					<h1><img src="images/Gender3.png" height="70%" width="70%"></h1>
+					<h2>Gender</h2>
 					<p>Will sort by gender</p></a></li>
 				<li><a href="#race">
-					<img src="images/Race3.png" height="110%">
-					<h1>Race</h1>
+					<h1><img src="images/Race3.png" height="70%" width="70%"></h1>
+					<h2>Race</h2>
 					<p>Will sort by race</p></a></li>
 				<li><a href="#height">
-					<img src="images/Height3.png" height="110%">
-					<h1>Height</h1>
+					<h1><img src="images/Height3.png" height="70%" width="70%"></h1>
+					<h2>Height</h2>
 					<p>Will sort by height</p></a></li>
 				<li><a href="#birthdate">
-					<img src="images/Birthdate3.png" height="110%">
-					<h1>Birthdate</h1>
+					<h1><img src="images/Birthdate3.png" height="70%" width="70%"></h1>
+					<h2>Birthdate</h2>
 					<p>Will sort by birthdate</p></a></li>
 				<li><a href="#glasses">
-					<img src="images/Glasses3.png" height="110%">
-					<h1>Glasses</h1>
+					<h1><img src="images/Glasses3.png" height="70%" width="70%"></h1>
+					<h2>Glasses</h2>
 					<p>Will sort by glasses</p></a></li>
 		</ul>
 	</div>
@@ -75,7 +82,7 @@
 <div data-role="page" id="additem" data-add-back-btn="true">
 
 	<div data-role="header" data-position="fixed">
-		<h1>Add a Character</h1>
+		<h1>LooneyApps</h1>
 	</div>
 
 	<header>
@@ -140,8 +147,8 @@
 		<br>
 		<br>
 		<input type="button" id="submitButton" value="Submit" data-theme="a"/>
-		<input type="button" id="displayButton" value="Display Data" />
-		<input type="button" id="clearButton" value="Clear Stored Data" />
+		<input type="button" id="displayButton" value="Display Data" data-theme="e" />
+		<input type="button" id="clearButton" value="Clear Stored Data" data-theme="e" />
 
 		<a href="#inputError" id="errorPoppingUp"  data-rel="dialog" data-transition="pop">Open Errors</a>
 		
@@ -324,11 +331,11 @@
 
 
 
-<!-- JavaScript under here -->
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
-<script src="js/json.js" language="javascript" type="text/javascript"></script>
-<script src="js/main.js" language="javascript" type="text/javascript"></script>
-<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+	<script src="js/json.js" language="javascript" type="text/javascript"></script>
+	<script src="js/main.js" language="javascript" type="text/javascript"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 </body>
 </html>
